@@ -1,0 +1,11 @@
+f-closed high hat
+d-open high hat
+g,h-snare
+b,v-bass
+n-crash
+c-ride
+t-tom1
+y-tom2
+u-floor tom
+r-sticks
+j-rimshot
