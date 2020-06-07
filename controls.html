@@ -1,98 +1,226 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Controls</title>
+    <link rel="icon" href="./images/drum-set.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Controls</title>
-  <link rel="icon" href="drum-set.png">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <h1>Drum Kit 7.0</h1>
+    <h2>Controls</h2>
+    <hr />
+    <div class="textdiv">
+      <table>
+        <tr>
+          <td class="key">
+            <input
+              id="sticks"
+              class="item"
+              type="text"
+              value="e"
+              maxlength="1"
+            />
+          </td>
+          <td class="name">: Sticks</td>
+        </tr>
+        <tr>
+          <td class="key">
+            <input
+              id="closedhh1"
+              class="item"
+              type="text"
+              value="f"
+              maxlength="1"
+            />
+          </td>
+          <td class="name">: Closed High-Hat1</td>
+        </tr>
+        <tr>
+          <td class="key">
+            <input
+              id="closedhh2"
+              class="item"
+              type="text"
+              value="d"
+              maxlength="1"
+            />
+          </td>
+          <td class="name">: Closed High-Hat2</td>
+        </tr>
+        <tr>
+          <td class="key">
+            <input
+              id="openhh"
+              class="item"
+              type="text"
+              value="r"
+              maxlength="1"
+            />
+          </td>
+          <td class="name">: Open High-Hat</td>
+        </tr>
+        <tr>
+          <td class="key">
+            <input
+              id="snare1"
+              class="item"
+              type="text"
+              value="g"
+              maxlength="1"
+            />
+          </td>
+          <td class="name">: Snare</td>
+        </tr>
+        <tr>
+          <td class="key">
+            <input
+              id="snare2"
+              class="item"
+              type="text"
+              value="h"
+              maxlength="1"
+            />
+          </td>
+          <td class="name">: Snare</td>
+        </tr>
+        <tr>
+          <td class="key">
+            <input
+              id="rimshot"
+              class="item"
+              type="text"
+              value="j"
+              maxlength="1"
+            />
+          </td>
+          <td class="name">: Rimshot</td>
+        </tr>
+        <tr>
+          <td class="key">
+            <input
+              id="bass1"
+              class="item"
+              type="text"
+              value="b"
+              maxlength="1"
+            />
+          </td>
+          <td class="name">: Bass</td>
+        </tr>
+        <tr>
+          <td class="key">
+            <input
+              id="bass2"
+              class="item"
+              type="text"
+              value="v"
+              maxlength="1"
+            />
+          </td>
+          <td class="name">: Bass</td>
+        </tr>
+        <tr>
+          <td class="key">
+            <input
+              id="crash"
+              class="item"
+              type="text"
+              value="m"
+              maxlength="1"
+            />
+          </td>
+          <td class="name">: Crash</td>
+        </tr>
+        <tr>
+          <td class="key">
+            <input
+              id="crashnbass"
+              class="item"
+              type="text"
+              value="n"
+              maxlength="1"
+            />
+          </td>
+          <td class="name">: Crash & Bass</td>
+        </tr>
+        <tr>
+          <td class="key">
+            <input id="ride" class="item" type="text" value="c" maxlength="1" />
+          </td>
+          <td class="name">: Ride</td>
+        </tr>
+        <tr>
+          <td class="key">
+            <input
+              id="lefttom"
+              class="item"
+              type="text"
+              value="t"
+              maxlength="1"
+            />
+          </td>
+          <td class="name">: Left-Tom</td>
+        </tr>
+        <tr>
+          <td class="key">
+            <input
+              id="righttom"
+              class="item"
+              type="text"
+              value="y"
+              maxlength="1"
+            />
+          </td>
+          <td class="name">: Right-Tom</td>
+        </tr>
+        <tr>
+          <td class="key">
+            <input
+              id="floortom"
+              class="item"
+              type="text"
+              value="u"
+              maxlength="1"
+            />
+          </td>
+          <td class="name">: Floor-Tom</td>
+        </tr>
+      </table>
+    </div>
+    <hr />
+    <br />
+    <div class="container">
+      <button class="save-button" onclick="setEasyControls()">
+        Easy Controls
+      </button>
+      <button class="save-button" onclick="saveCustomControls()">
+        Update Changes
+      </button>
+      <button class="save-button" onclick="setProControls()">
+        Pro Controls
+      </button>
+    </div>
+    <br /><br /><br />
+    <footer class="footer">
+      <span class="spacing">|</span>
+      <a class="footer" href="index.html">DrumKit</a>
+      <span class="spacing">|</span>
+      Made with ❤️ for helpless drummers out there ;)
+      <span class="spacing">|</span>
+      <a class="footer" href="help.html">Help</a>
+      <span class="spacing">|</span>
+    </footer>
 
-<body>
-  <h1>Drum Kit 7.0</h1>
-  <h2>Controls</h2>
-  <hr>
-  <div class="textdiv">
-    <table>
-      <tr>
-        <td class="key"><input id="sticks" class="item" type="text" value="e" maxlength=1/></td>
-        <td class="name">: Sticks</td>
-      </tr>
-      <tr>
-        <td class="key"><input id="closedhh1" class="item" type="text" value="f" maxlength=1/></td>
-        <td class="name">: Closed High-Hat1</td>
-      </tr>
-      <tr>
-        <td class="key"><input id="closedhh2" class="item" type="text" value="d" maxlength=1/></td>
-        <td class="name">: Closed High-Hat2</td>
-      </tr>
-      <tr>
-        <td class="key"><input id="openhh" class="item" type="text" value="r" maxlength=1/></td>
-        <td class="name">: Open High-Hat</td>
-      </tr>
-      <tr>
-        <td class="key"><input id="snare1" class="item" type="text" value="g" maxlength=1/></td>
-        <td class="name">: Snare</td>
-      </tr>
-      <tr>
-        <td class="key"><input id="snare2" class="item" type="text" value="h" maxlength=1/></td>
-        <td class="name">: Snare</td>
-      </tr>
-      <tr>
-        <td class="key"><input id="rimshot" class="item" type="text" value="j" maxlength=1/></td>
-        <td class="name">: Rimshot</td>
-      </tr>
-      <tr>
-        <td class="key"><input id="bass1" class="item" type="text" value="b" maxlength=1/></td>
-        <td class="name">: Bass</td>
-      </tr>
-      <tr>
-        <td class="key"><input id="bass2" class="item" type="text" value="v" maxlength=1/></td>
-        <td class="name">: Bass</td>
-      </tr>
-      <tr>
-        <td class="key"><input id="crash" class="item" type="text" value="m" maxlength=1/></td>
-        <td class="name">: Crash</td>
-      </tr>
-      <tr>
-        <td class="key"><input id="crashnbass" class="item" type="text" value="n" maxlength=1/></td>
-        <td class="name">: Crash & Bass</td>
-      </tr>
-      <tr>
-        <td class="key"><input id="ride" class="item" type="text" value="c" maxlength=1/></td>
-        <td class="name">: Ride</td>
-      </tr>
-      <tr>
-        <td class="key"><input id="lefttom" class="item" type="text" value="t" maxlength=1/></td>
-        <td class="name">: Left-Tom</td>
-      </tr>
-      <tr>
-        <td class="key"><input id="righttom" class="item" type="text" value="y" maxlength=1/></td>
-        <td class="name">: Right-Tome</td>
-      </tr>
-      <tr>
-        <td class="key"><input id="floortom" class="item" type="text" value="u" maxlength=1/></td>
-        <td class="name">: Floor-Tom</td>
-      </tr>
-    </table>
-  </div>
-  <hr>
-  <br>
-  <button class="save-button" onclick="updateControls()">Update Controls</button>
-  <br><br><br>
-  <footer class="footer">
-    <span class="spacing">|</span>
-    <a class="footer" href="index.html">DrumKit</a>
-    <span class="spacing">|</span>
-    Made with ❤️ for helpless drummers out there ;)
-    <span class="spacing">|</span>
-    <a class="footer" href="help.html">Help</a>
-    <span class="spacing">|</span>
-  </footer>
-
-  <script src="controls.js" charset="utf-8"></script>
-</body>
-
+    <script src="controls.js" charset="utf-8"></script>
+  </body>
 </html>
