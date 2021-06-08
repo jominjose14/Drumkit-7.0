@@ -16,7 +16,7 @@ let audioElems = [
   "sticks",
 ];
 audioElems.forEach((audio) => {
-  new Audio(`./sounds/${audio.dataset.key}.mp3`);
+  new Audio(`./sounds/${audio}.mp3`);
 });
 
 //Fetching controls
